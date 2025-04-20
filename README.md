@@ -28,7 +28,7 @@ Este projeto visa automatizar a coleta, tratamento e armazenamento de dados clim
 Teste-Pratico-10P/
 │── main.py            # Script principal de coleta e salvamento dos dados
 │── create_tables.sql  # Script SQL para criação da tabela 'clima'
-│── .env               # Arquivo com variáveis de ambiente (NÃO versionar)
+│── .env               # Arquivo com variáveis de ambiente
 │── requirements.txt   # Dependências do projeto
 └── README.md          # Documentação do projeto
 
@@ -91,6 +91,8 @@ python main.py
 🔍 Para verificar os dados inseridos:
 SELECT * FROM clima;
 
+```
+---
 
 📊 Decisões Técnicas
 ✅ API escolhida: OpenWeatherMap pela robustez, gratuidade e excelente documentação.
