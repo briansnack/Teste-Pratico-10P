@@ -4,15 +4,18 @@ Este projeto visa automatizar a coleta, tratamento e armazenamento de dados clim
 
 ---
 
+```bash
 📌 Visão Geral
 🔹 Coleta de dados climáticos em tempo real da cidade de Curitiba via API OpenWeatherMap.
 🔹 Tratamento dos dados coletados (limpeza e padronização).
 🔹 Armazenamento dos dados processados no banco PostgreSQL.
 🔹 Utilização de variáveis de ambiente para segurança e organização.
 🔹 Estrutura clara e organizada para fácil reprodutibilidade.
+```
 
 ---
 
+```bash
 🛠️ Tecnologias Utilizadas
 ✅ Python 3.x
 ✅ requests → Requisição da API
@@ -21,9 +24,11 @@ Este projeto visa automatizar a coleta, tratamento e armazenamento de dados clim
 ✅ psycopg2-binary → Driver PostgreSQL
 ✅ dotenv → Gerenciamento de variáveis de ambiente
 ✅ PostgreSQL 12+
+```
 
 ---
 
+```bash
 ## 📁 Estrutura do Projeto
 Teste-Pratico-10P/
 │── main.py            # Script principal de coleta e salvamento dos dados
@@ -31,14 +36,17 @@ Teste-Pratico-10P/
 │── .env               # Arquivo com variáveis de ambiente
 │── requirements.txt   # Dependências do projeto
 └── README.md          # Documentação do projeto
+```
 
 ---
 
+```bash
 🔑 Pré-requisitos
 🔸 Python 3 instalado
 🔸 PostgreSQL configurado e rodando localmente
 🔸 Conta e chave de API do OpenWeatherMap (Não é necessário pois a chave da API já está no projeto)
 🔸 Criar um banco de dados clima_db no PostgreSQL
+```
 
 ---
 
@@ -93,18 +101,27 @@ SELECT * FROM clima;
 
 ```
 ---
-
+```bash
 📊 Decisões Técnicas
 ✅ API escolhida: OpenWeatherMap pela robustez, gratuidade e excelente documentação.
 ✅ Tratamento dos dados: Uso do pandas para padronização e futura escalabilidade.
 ✅ Conexão ao banco: SQLAlchemy, garantindo flexibilidade e segurança.
 ✅ Variáveis sensíveis armazenadas em .env para evitar exposição (.env visível nesse projeto para facilitar na hora de rodar o projeto e não ser necessária a criação).
+```
 
+---
+
+```bash
 📌 Observações
 ⚠️ O projeto foi desenvolvido para rodar localmente com PostgreSQL.
 ⚠️ A criação da tabela pode ser feita via script .sql ou manualmente.
+```
 
+---
+
+```bash
 🔮 Próximos Passos
 🔹 Automatizar coleta diária (cron/apscheduler)
 🔹 Armazenar dados históricos de múltiplas cidades
 🔹 Criar um painel de visualização interativo com Dash ou Power BI
+```
